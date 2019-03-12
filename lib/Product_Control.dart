@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ProductControl extends StatelessWidget {
+class ProductControl extends StatelessWidget  {
 
   final  Function _updatetheproduct;
   ProductControl(this._updatetheproduct);

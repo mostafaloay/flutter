@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/product_manger.dart';
+import 'package:flutter/rendering.dart';
 
 main() {
   runApp(MyApp());
@@ -19,11 +20,12 @@ class _MyAppState extends State<MyApp> {
         theme: ThemeData(primarySwatch: Colors.green),
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-            appBar: AppBar(
-              title: Text('mostafa app'),
-              //backgroundColor: Color.fromARGB(255, 99, 142, 142),
-            ),
-            body: productmanger("ahmed")));
+          appBar: AppBar(
+            title: Text('mostafa app'),
+            //backgroundColor: Color.fromARGB(255, 99, 142, 142),
+          ),
+          body: productmanger("ahmed"),
+        ));
     return myApp;
   }
 }
