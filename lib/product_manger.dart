@@ -17,7 +17,7 @@ class productmangerstate extends State<productmanger> {
 
   @override
   void initState() {
-    _p.add(widget.text);
+    //_p.add(widget.text);
     super.initState();
   }
 
@@ -29,8 +29,9 @@ class productmangerstate extends State<productmanger> {
   @override
   build(BuildContext context) {
     return Column(children: <Widget>[
-      Container(margin: EdgeInsets.all(10), child: ProductControl(updatetheproduct)),
-      Container(child: products(_p)) //seperated class card
+      Container(margin: EdgeInsets.all(10),
+          child: ProductControl(updatetheproduct)),
+      Expanded(child: Container(child: products(_p))) //seperated class card
     ]);
   }
 
